@@ -15,7 +15,7 @@ const Home = () => {
 
     return (
         <div className="bg-gradient-to-tl from-blue-500 to-blue-600 w-screen h-screen flex items-center justify-center">
-            <main className="md:w-[55%] md:h-[35%] w-[85%] h-[45%] bg-gray-800 rounded-md shadow-md border-2 border-gray-700 overflow-hidden text-gray-400">
+            <main className="md:w-[55%] md:h-[40%] w-[85%] h-[45%] bg-gray-800 rounded-md shadow-md border-2 border-gray-700 overflow-hidden text-gray-400">
                 <header className="w-full bg-gray-900 h-[20%] py-1 px-2 text-center">
                     <h1 className="md:text-3xl text-xl font-semibold">GroupChat</h1>
                 </header>
@@ -28,19 +28,19 @@ const Home = () => {
                     </div>
                     <div className='w-full flex-col items-center flex justify-center'>
                         {user ?
-                            <div className='w-full flex-col flex justify-center md:gap-3 gap-5'>
+                            <div className='w-full flex-col flex justify-center gap-3'>
                                 <a className='w-full flex justify-center' href="/chatbox"><button
                                     title={"Pressione para iniciar no Chat."}
                                     disabled={false}
-                                    className='bg-emerald-400 transition-colors hover:bg-emerald-500 disabled:bg-emerald-800 disabled:text-gray-300 disabled:hover:cursor-not-allowed text-white flex rounded-md font-semibold items-center justify-center gap-2 p-2 w-full md:w-[30%]'
+                                    className='bg-emerald-400 transition-colors hover:bg-emerald-500 disabled:bg-emerald-800 disabled:text-gray-300 disabled:hover:cursor-not-allowed text-white flex rounded-md font-semibold items-center justify-center gap-2 p-2 w-[60%] md:w-[30%]'
                                 >COMEÇAR<BsPlayFill className='text-2xl' /></button></a>
-                                <button onClick={() => singOut()} className='text-center uppercase text-[8px] md:text-sm font-semibold underline'>Desconectar conta</button>
+                                <button onClick={() => singOut()} className='text-center uppercase text-[9px] md:text-sm font-semibold underline'>Desconectar conta</button>
                             </div>
                             :
                             <button
                                 title={"Faça login com sua conta Google para continuar."}
                                 disabled={true}
-                                className='bg-emerald-400 transition-colors hover:bg-emerald-500 disabled:bg-emerald-800 disabled:text-gray-300 disabled:hover:cursor-not-allowed text-white flex rounded-md font-semibold items-center justify-center gap-2 p-2 w-[30%]'
+                                className='bg-emerald-400 transition-colors hover:bg-emerald-500 disabled:bg-emerald-800 disabled:text-gray-300 disabled:hover:cursor-not-allowed text-white flex rounded-md font-semibold items-center justify-center gap-2 p-2 w-[60%] md:w-[30%]'
                             >COMEÇAR<BsPlayFill className='text-2xl' /></button>
                         }
                     </div>
